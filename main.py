@@ -1,7 +1,10 @@
 from TESTER_1 import *
-from pprint import pprint
-nathan = aiBrain()
 
-#print(nathan.record_food("I ate 2eggs, 100 grams of beef, and 200 grams of rice, and a chicken leg for breakfast", "efdvc"))
+calculator = aiBrain()
 
-print(nathan.record_cardio("I ran 20 miles and jogged for 15 minutes"))
+food = input("what did you eat?")
+meal = input("what meal was that?")
+calculator.record_food(food, meal)
+
+cardio = input("What cardio did you do?")
+calculator.record_cardio(cardio)
