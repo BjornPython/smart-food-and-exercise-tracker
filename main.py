@@ -1,4 +1,4 @@
-from TESTER_1 import *
+from calc_brain import *
 
 calculator = aiBrain()
 
