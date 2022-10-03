@@ -6,7 +6,7 @@ scope = ["https://spreadsheets.google.com/feeds", 'https://www.googleapis.com/au
          "https://www.googleapis.com/auth/drive.file", "https://www.googleapis.com/auth/drive"]
 
 try:
-    creds = ServiceAccountCredentials.from_json_keyfile_name("reds.json", scope)
+    creds = ServiceAccountCredentials.from_json_keyfile_name("creds.json", scope)  # your json file
 except FileNotFoundError:
     print("File cannot be found.")
 else:
@@ -27,5 +27,3 @@ def insert_row(time, exercise, duration, calories, date=dt.today().strftime('%m/
     sheet.insert_row(new_data, len(sheet_data) + 2)
 
 
-def insert_col():
-    pass
